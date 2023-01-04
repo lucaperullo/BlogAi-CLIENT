@@ -7,9 +7,15 @@ import "swiper/css/pagination";
 
 import { Mousewheel } from 'swiper';
 import Card from 'lib/components/card';
+import { useEffect } from 'react';
+import { useStateValue } from 'context/stateProvider';
 
 
 export default function () {
+  const [state,dispatch] = useStateValue()
+  useEffect(() => {
+    console.log(state)
+  }, [])
   return (
     <SimpleGrid column={{
       base: 1,

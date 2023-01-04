@@ -1,4 +1,5 @@
 import { Box, Flex } from "@chakra-ui/react";
+import LocaleSelector from "./LocaleSelector";
 
 import ThemeToggle from "./ThemeToggle";
 
@@ -14,6 +15,9 @@ const Header = () => {
     >
       <Box marginLeft="auto">
         <ThemeToggle />
+      </Box>
+      <Box>
+        <LocaleSelector/>
       </Box>
     </Flex>
   );
